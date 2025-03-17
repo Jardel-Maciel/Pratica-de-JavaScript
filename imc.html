@@ -22,5 +22,19 @@
 
     var imcDoUsuario = pesoDoUsuario / (alturaDoUsuario * alturaDoUsuario);
     mostrar("O imc é: " + imcDoUsuario.toFixed(1)); 
+    if(imcDoUsuario < 18.5){
+        mostrar("seu imc mostra que você esta abaixo do peso.")
+
+    }
+    if(imcDoUsuario > 35){
+        mostrar("Seu imc mostra que você está acima do peso.")
+
+    }
+    if(imcDoUsuario >= 18.5 && imcDoUsuario <= 35){
+        
+        mostrar("OK! Seu imc está bom.")
+        
+    }
+
 
 </script>
