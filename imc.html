@@ -16,12 +16,11 @@
     }
     
 
-    var pesoDoPrimo = 120;
-    var alturaDoPrimo = 1.86;
-    var imcDoPrimo = calcularIMC(alturaDoPrimo, pesoDoPrimo);
-    mostrar("O imc do meu primo é " + imcDoPrimo );
-    mostrar("Ele está " + (imcDoPrimo.toFixed(1) - 18.5 )  + " pontos acima do limite de magreza");
-    
+    var alturaDoUsuario = prompt("Bom dia! Qual a asua altura?");
 
+    var pesoDoUsuario = prompt("Qual o seu peso?")
+
+    var imcDoUsuario = pesoDoUsuario / (alturaDoUsuario * alturaDoUsuario);
+    mostrar("O imc é: " + imcDoUsuario.toFixed(1)); 
 
 </script>
