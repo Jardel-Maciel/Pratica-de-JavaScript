@@ -1,0 +1,39 @@
+<script>
+    function calculaPontos(vitorias, empates){
+        return(vitoria * 3) + empates;
+    }
+
+
+    function pular_linha(){
+        document.write("<br>");
+    }
+    function mostra(pontos){
+        document.write(pontos);
+        pular_linha();
+    }
+
+    var vitoriasAdversario = parseInt(prompt("Quantas vitorias o outro time tem?"));
+    var empatesAdversario = parseInt(prompt("Quantos empates o outro time tem?"))
+    var derrotasAdversario = parseInt(prompt("Quantas derrotas o outro time tem?"))
+    var pontos_adversario = (vitoriasAdversario * 3) + empatesAdversario - derrotasAdversario;
+
+    var vitorias = parseInt(prompt("Quantos jogos o CDC FC venceu?"));
+    var empates = parseInt(prompt("Quantos jogos o CDC FC empatou?"));
+    var derrotas = parseInt(prompt("Quantas derrotas o CDC FC tem ?"))
+    var pontos = (vitorias * 3) + empates - derrotas;
+    if(pontos > pontos_adversario){
+        mostra("Nosso time está  indo MELHOR que o Livrod velhos FC." + " pontos CDC FC " + pontos + "pontos LV FC " + pontos_adversario)
+    }
+    if(pontos < pontos_adversario){
+        mostra("nosso time está indo PIOR que o Livros Velhos" + " pontos CDC FC " + pontos + "pontos LV FC " + pontos_adversario);
+    }
+    if(pontos == pontos_adversario){
+        mostra("Estamos empatados com os Livros Velhos" + " pontos CDC FC " + pontos + " pontos LV FC " + pontos_adversario);
+    }
+
+   
+
+
+
+</script>
+
