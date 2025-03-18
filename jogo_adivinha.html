@@ -1,0 +1,20 @@
+<script>
+    function pulaLinha(){
+        document.write("<br>");
+    }
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    
+    var numeroPensado = Math.round(Math.random() * 10);
+    var chute = prompt("Em qual numero eu estou pensando?");
+    if(chute == numeroPensado){
+        mostra("Uau você é muito bom neste jogo, eu pensei exatamente em " + numeroPensado)
+    }else{
+        mostra("Acho que você não é tão bom assim, eu pensei em " + numeroPensado)
+    }
+
+
+</script>
