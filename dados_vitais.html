@@ -1,16 +1,20 @@
 <script>
-function calcular(){
-    var dias = calculaDiasDeVida(idade);
-    return idade * 365;
-}
-
-function calculaBatimentos(){
-    var batimentos = dias * 24 * 60 * 80;
     
-}
+    
+    function calculo(idade){
+        return idade * 365;
 
-var idade = 35;
-var dias = calculaDiasDeVida(idade);
-var batimentos = calculaBatimentos(dias);
-document.write("Seu coração ja bateu " + batimentos + " vezes. Haja coração")
+    }
+    var calculaDiaDeVida = calculo;
+
+    function calculaBatimentos(){
+        calculo() * 24 * 60 * 80;
+    }
+
+    var idade = 34;
+    var dias = calculaDiaDeVida(idade);
+    var batimentos = calculaBatimentos();
+    document.write(batimentos)
+
+
 </script>
