@@ -1,18 +1,4 @@
-<script>
-    function pulaLinha(){
-        document.write("<br>");
-    }
-    function mostra(frase){
-        document.write(frase);
-        pulaLinha();
-    }
-
-    function sorteia(){
-        var n = Math.round(Math.random());
-        return n;
-    }
-
-
+<body>
     
     var numeroPensado = sorteia(10) ;
     var chute = prompt("Em qual numero eu estou pensando?");
@@ -32,5 +18,53 @@
         mostra("O numero que você chutou e menor, eu pensei em " + numeroPensado);
     }
 
+    <script>
+        function pulaLinha(){
+            document.write("<br>");
+        }
+        function mostra(frase){
+            document.write(frase);
+            pulaLinha();
+        }
 
-</script>
+        function sorteia(){
+            var n = Math.round(Math.random());
+            return n;
+        }
+
+
+        
+        var numeroPensado = sorteia(100) ;
+        var chute = prompt("Em qual numero eu estou pensando?");
+        if(isNaN(chute)){
+        mostra("Não é um numero!!!!")
+        
+        
+        }
+        if(chute == numeroPensado){
+            mostra("Uau você é muito bom neste jogo, eu pensei exatamente em " + numeroPensado);
+            document.body.style.backgroundColor = "green";
+            document.body.style.color = "#fff"
+            document.body.style.fontSize = "40px"
+            
+        }
+        if(chute > numeroPensado){
+            mostra("O numero que você chutou e maior, eu pensei em " + numeroPensado);
+            document.body.style.backgroundColor = "red";
+            document.body.style.fontSize = "40px"
+            document.body.style.color = "#fff"
+            
+            
+        }
+        if(chute < numeroPensado){
+            mostra("O numero que você chutou e menor, eu pensei em " + numeroPensado);
+            document.body.style.backgroundColor = "red";
+            document.body.style.fontSize = "40px"
+            document.body.style.color = "#fff"
+            
+
+        }
+
+
+    </script>
+</body>
