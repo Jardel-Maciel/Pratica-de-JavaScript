@@ -1,10 +1,14 @@
 <script>
-    var eu = 70;
-    var adriano = 26;
-    var paulo = 32;
+   function mostra(frase){
+    document.write(frase + "<br>")
+   }   
+   var idadeAdriano = 26;
+   var idadePaulo = 32;
+   var idadeSuzana = 25;
+   var idadeJardel =29;
 
-    var total = eu + adriano + paulo;
-    var media = total / 3;
 
-    document.write("A média de idade é " + Math.round(media));
+   var media =(idadeAdriano + idadePaulo + idadeSuzana + idadeJardel) / 4;
+   mostra("A media de idade é de " + media);
+
 </script>
