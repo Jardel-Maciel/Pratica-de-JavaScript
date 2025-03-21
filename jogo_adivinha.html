@@ -1,25 +1,6 @@
 <body>
     <script>
     
-    var numeroPensado = sorteia(10) ;
-    var chute = prompt("Em qual numero eu estou pensando?");
-    if(isNaN(chute)){
-       mostra("Não é um numero!!!!")
-       
-    }
-    if(chute == numeroPensado){
-        
-        mostra("Uau você é muito bom neste jogo, eu pensei exatamente em " + numeroPensado)
-    }
-    if(chute > numeroPensado){
-        
-        mostra("O numero que você chutou e maior, eu pensei em " + numeroPensado);
-    }
-    else{
-        mostra("O numero que você chutou e menor, eu pensei em " + numeroPensado);
-    }
-
-    
     function pulaLinha(){
         document.write("<br>");
     }
