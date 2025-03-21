@@ -1,0 +1,17 @@
+<script>
+var numeroPensado = Math.round(Math.random() * 10);
+
+var numeroDeTentativas = 1;
+while(numeroDeTentativas <= 3 ){
+    var chute = prompt("Em qual numero eu estou pensando?")
+    if(chute == numeroPensado){
+        alert("Parabens Você acertou, eu pensei em " + numeroPensado);
+        break;
+    }else{
+        alert("Você errouuuu, mais sorte da proxima vez.Eu pensei em " + numeroPensado ) 
+    }
+
+    numeroDeTentativas ++;
+}
+
+</script>
