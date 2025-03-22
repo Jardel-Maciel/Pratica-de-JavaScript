@@ -1,26 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calduladora de imc</title>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!--Google fonts-->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Calculadora de IMC</title>
 </head>
 <body>
-    <header>
-        <h1>Calcule seu IMC</h1>
-    </header>
     <main>
+        <h1>
+            Calcule seu IMC
+        </h1>
         <article>
-            <input type="number" name="altura" id="altura" placeholder="Digite sua altura">
-            <input type="number" name="peso" id="peso" placeholder="Digite seu peso">
+            
+            <input type="number" name="altura" id="altura" placeholder="Digite sua altura...">
 
-            <button type="button" onclick="calcular()">Calcule</button>
+            
+            <input type="number" name="peso" id="peso" placeholder="Digite seu peso...">
+
+            <button type="button" onclick="calcular()">Calcular</button>
         </article>
-        <article id="res">
-            Resultado 
+
+        <article id="res" class="resultado">
+            Resultado.....
         </article>
     </main>
-    
 
     <script src="app.js"></script>
 </body>
