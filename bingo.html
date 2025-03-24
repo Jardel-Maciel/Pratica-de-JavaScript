@@ -1,0 +1,23 @@
+<input type="text" name="" id="numero">
+<input type="submit" id="adivinhar" value="Adicione e verifique no Bingo!">
+
+<script>
+    var sorteados =[];
+    var botao = document.getElementById('adivinhar');
+    botao.onclick = adicionarSorteados
+    
+       
+
+    function adicionarSorteados(){
+        var numero = document.getElementById('numero').value;
+        for(var i = 0; i < sorteados.length; i = i + 1){
+            if(sorteados[i] == numero ){
+                alert("Esse numero já existe")
+                return;
+        }
+    }
+        sorteados.push(numero);
+        console.log(sorteados)
+
+}
+</script>
