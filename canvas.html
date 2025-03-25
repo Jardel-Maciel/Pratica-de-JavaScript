@@ -1,9 +1,44 @@
-<canvas id="tela" width="600" height="400"></canvas>
+<canvas id="tela" width="1600" height="1600"></canvas>
 
 <script>
     var tela = document.getElementById('tela');
     var c = tela.getContext('2d');
-     
-    c.fillStyle="green";
+    /* 
+    c.fillStyle="red";
     c.fillRect(0, 0, 200, 400);
+
+    c.fillStyle ="black";
+    c.fillRect(400, 0 , 200, 400)
+
+    c.fillStyle = "gray";
+    c.beginPath();
+    c.moveTo(300, 200);
+    c.lineTo(200 , 400);
+    c.lineTo(400, 400);
+    c.fill();
+
+    c.fillStyle ="blue";
+    c.beginPath();
+    c.arc(300, 200, 50, 0, 2 * Math.PI);
+    c.fill();
+    */
+    c.fillStyle="yellow";
+    c.fillRect(0, 0, 600, 250);
+
+    c.fillStyle="blue";
+    c.fillRect(0, 200, 600, 120);
+
+    c.fillStyle = "red";
+    c.fillRect(0 , 300, 600, 100);
+
+
+    c.fillStyle = "gray";
+    c.fillRect(620, 0 , 200 , 400)
+
+    c.fillStyle = "black"
+    c.fillRect(820, 0 , 400, 200)
+
+    c.fillStyle = "red";
+    c.fillRect(820, 200 ,400, 200)
+    
 </script>
