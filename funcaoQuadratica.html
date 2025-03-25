@@ -5,6 +5,8 @@
 <script>
     var tela = document.getElementById('tela')
     var c = tela.getContext("2d")
+
+    c.fillStyle = "bluex"
     function funcaoQuadratica(x){
         return 0.01 * x * x;
     }
@@ -15,8 +17,9 @@
             console.log("Para x = " + x + ", o y vale " + y)
 
             c.beginPath()
-            c.arc(x, 400 -y , 0 ,2*Math.PI)
+            c.arc(x, 400 -y , 2, 0 ,2*Math.PI)
             c.fill()
         }
     }
+    desenhaParabula()
 </script>
