@@ -4,20 +4,44 @@
 
     function desenharQuadradoVerde(x,y){
         var tela = document.getElementById('tela')
-    var c = tela.getContext("2d")
+        var c = tela.getContext("2d")
 
-    c.fillStyle = "green"
-    c.fillRect(x,y,50,50)
+        c.fillStyle = "green"
+        c.fillRect(x,y,50,50)
 
-    c.strokeStyle = "black"
-    c.strokeRect(x, y, 50, 50)
+        c.strokeStyle = "black"
+        c.strokeRect(x, y, 50, 50)
+    }
+
+    function desenharQuadradoVermelho(x,y){
+        var tela = document.getElementById('tela')
+        var c = tela.getContext("2d")
+
+        c.fillStyle = "red"
+        c.fillRect(x,y,50,50)
+
+        c.strokeStyle = "black"
+        c.strokeRect(x, y, 50, 50)
+    }
+
+    function desenharBolasAzuis(x,y){
+
+        var tela = document.getElementById('tela')
+        var c = tela.getContext('2d')
+
+        c.fillStyle = "blue"
+        
+        c.beginPath()
+        c.arc(x + 25, y,25,0,2*Math.PI)
+        c.fill()
+
     }
    
-    x = 0;
-    while(x < 600){
+    for(var x = 0; x < 600; x = x + 50){
         desenharQuadradoVerde(x, 0)
-        x = x + 50
-    }
-
+        desenharQuadradoVermelho(x, 50)
+        desenharBolasAzuis(x, 100)
+   }
+   
 
 </script>
