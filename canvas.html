@@ -1,4 +1,4 @@
-<canvas id="tela" width="1600" height="1600"></canvas>
+<canvas id="tela" width="1920" height="2500"></canvas>
 
 <script>
     var tela = document.getElementById('tela');
@@ -40,5 +40,50 @@
 
     c.fillStyle = "red";
     c.fillRect(820, 200 ,400, 200)
+
+    c.fillStyle = "red"
+    c.fillRect(1240,0,600,100)    
+    c.fillStyle = "black"
+    c.fillRect(1240,100,600,200)
+    c.fillStyle = "red"
+    c.fillRect(1240,300,600,100)
+    fillStyle = "white"
+    c.beginPath()
+    c.arc(1550, 200, 50, 0, 2*Math.PI)
+    c.fill()
+
+    c.fillStyle = "red"
+    c.fillRect(0, 420, 600,400) 
+    c.fillStyle = "white"
+    c.fillRect(0,570,600,90) 
+    c.fillStyle = "white"
+    c.fillRect(150, 420, 90, 400)
+    c.fillStyle = "black"
+    c.fillRect(175, 420, 40, 400)
+    c.fillStyle = "black"
+    c.fillRect(0,595,600,40)
+
+
+    //bandeira do brasil
+
+    c.fillStyle = "green"
+    c.fillRect(0,0, 600, 400 )
+
+    c.fillStyle = "yellow"
+    c.beginPath()
+    c.moveTo(0, 200)
+    c.lineTo(300,0)
+    c.lineTo(600,200)
+    c.lineTo(300,400)
+    c.fill()
+
+    c.fillStyle = "blue"
+    c.beginPath()
+    c.arc(300,200,150,0,2*Math.PI)
+    c.fill()
+
+
+
+
     
 </script>
